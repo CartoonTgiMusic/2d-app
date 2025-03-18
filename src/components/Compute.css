@@ -1,0 +1,18 @@
+.compute-ctn{
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
+}
+.ins-ctn{
+    display: grid;
+    gap: 10px;
+    width: 200px;
+    input{
+        width: 100%;
+        padding: 10px;
+    }
+    button{
+        width: 100%;
+        padding: 10px;
+    }
+}

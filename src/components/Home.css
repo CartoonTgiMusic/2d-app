@@ -1,0 +1,88 @@
+.keyboard-ctn {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    background-color: #f4f4f4;
+    padding: 0.5rem;
+    width: 100%;
+    border:5px solid #333;
+  }
+  .inputs-ctn{
+    display: grid;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    input{
+      padding: 3px 10px;
+    }
+  }
+  .price-input,.code-input{
+      height: 40px;
+    }
+  .keypart{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+  }
+  .key{
+    background-color: #333;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: white;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  input{
+    font-size: 16px;
+  }
+
+  .table-ctn{
+    padding-top:34px;
+    padding-bottom: 300px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0px auto;
+  }
+th, td {
+border: 1px solid #ddd;
+padding: 8px;
+text-align: left;
+white-space: normal; /* Ensures text wraps (default behavior) */
+word-wrap: break-word; /* Breaks long words if necessary */
+overflow-wrap: break-word; /* Modern alternative to word-wrap */
+button{
+  background:none;
+  border:none;
+}
+i{
+  font-size:14px;
+}
+.trash{
+  color:black;
+}
+}
+th {
+background-color: #f4f4f4;
+}
+.b-td{
+text-align: center;
+max-width: 50px;
+}
+.home-total{
+  padding: 0.5rem;
+  text-align: right;
+}
+
+  .inactive{
+    display:none;
+}

@@ -1,0 +1,28 @@
+.nav-ctn{
+  position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar div {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  i{
+    font-size: large;
+    padding:0.5rem;
+    color:white;
+  }
+
+ 
