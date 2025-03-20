@@ -8,7 +8,8 @@ const About = () => {
     <div onClick={()=>navigate('/')} style={{height:'100vh',textAlign:'center',marginTop:'35px',display:'grid',placeContent:'center'}}>
       <p>Wecome!</p>
       <h1 style={{padding:'20px'}}>d&d</h1>
-      <p>Decveloped by Padecholl</p>
+      <p>Developed by Padecholl</p>
+      <p>Contact: padecholl@gmail.com</p>
     </div>
   );
 };
