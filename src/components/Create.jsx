@@ -15,9 +15,9 @@ const Create = () => {
     setCreate(storedCreate);
   }, []);
 
-    useEffect(() => {
-      localStorage.setItem('create', JSON.stringify(create));
-    }, [create]);
+    // useEffect(() => {
+    //   localStorage.setItem('create', JSON.stringify(create));
+    // }, [create]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -33,16 +33,14 @@ const Create = () => {
 
     localStorage.setItem('create', JSON.stringify(latestEntry));
     setCreate(latestEntry);
-
+    navigate('/')
+    window.location.reload()
     setDate('');
     setAmpm('');
-
-    navigate('/');
-    window.location.reload()
   };
 
   return (
-    <div style={{display:'grid',justifyItems:'center',marginTop:'35px'}} onClick={()=>{navigate('/')}}>
+    <div style={{display:'grid',justifyItems:'center',marginTop:'35px'}}>
       <h4>နေ့စွဲထည့်ရန်</h4>
       <form onSubmit={handleSubmit} style={{width:'200px'}}>
         <div style={{marginBottom:'20px'}}>
@@ -70,7 +68,7 @@ const Create = () => {
             <option value="ညနေ">ညနေ</option>
           </select>
         </div>
-         <button type="submit" style={{width:'100%',height:'50px'}}>Create</button>
+         <button type="submit" style={{width:'100%',height:'50px'}} >Create</button>
       </form>
     </div>
   );
