@@ -1,8 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './Home.css'
+import { useNavigate } from 'react-router-dom';
 
 
 const Home = () => {
+  const navigate =useNavigate()
   const [code, setCode] = useState('');
   const [price, setPrice] = useState('');
   const [activeInput, setActiveInput] = useState('code');
@@ -26,6 +28,11 @@ const Home = () => {
   useEffect(() => {
     localStorage.setItem('enter', JSON.stringify(enter));
   }, [enter]);
+
+  // const refresh =()=>{
+  //  const refreshData = localStorage.setItem('enter',JSON.stringify(enter))
+  //  setEnter(refreshData)
+  // }
 
   const total = enter.reduce((acc, item) => acc + (+item.subtotal || 0), 0);
 
@@ -352,7 +359,8 @@ const Save = () => {
         localStorage.setItem("save", JSON.stringify(save));
 
         localStorage.removeItem("enter");
-        window.location.reload()
+        // refresh()
+        navigate('/')
 };
 
 

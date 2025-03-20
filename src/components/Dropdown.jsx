@@ -1,12 +1,14 @@
 import React from 'react'
 import './Dropdown.css'
 import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Dropdown = () => {
+  const navigate = useNavigate()
     const Reset=()=>{
        if(confirm('စားရင်းအားလုံးဖျက်မှာလား?')){
          localStorage.clear()
-         window.location.reload()
+         navigate('/')
        }
     }
   return (

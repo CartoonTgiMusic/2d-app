@@ -34,7 +34,6 @@ const Create = () => {
     localStorage.setItem('create', JSON.stringify(latestEntry));
     setCreate(latestEntry);
     navigate('/')
-    window.location.reload()
     setDate('');
     setAmpm('');
   };
