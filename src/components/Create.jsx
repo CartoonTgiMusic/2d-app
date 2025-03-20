@@ -36,9 +36,6 @@ const Create = () => {
 
     setDate('');
     setAmpm('');
-
-    navigate('/');
-    window.location.reload()
   };
 
   return (
@@ -70,7 +67,10 @@ const Create = () => {
             <option value="ညနေ">ညနေ</option>
           </select>
         </div>
-         <button type="submit" style={{width:'100%',height:'50px'}}>Create</button>
+         <button type="submit" style={{width:'100%',height:'50px'}} onClick={()=>{
+              navigate('/');
+    window.location.reload()
+         }}</button>>Create</button>
       </form>
     </div>
   );
