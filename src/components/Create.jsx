@@ -68,7 +68,7 @@ const Create = () => {
             <option value="ညနေ">ညနေ</option>
           </select>
         </div>
-         <button type="submit" style={{width:'100%',height:'50px'}} >Create</button>
+         <button type="submit" style={{width:'100%',height:'50px'}}>Create</button>
       </form>
     </div>
   );
